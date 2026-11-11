@@ -1,0 +1,184 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+@page { size: A4; margin: 0; }
+* { box-sizing: border-box; }
+body { margin:0; font-family: Arial, Helvetica, sans-serif; color:#1f2933; background:#fff; }
+.page { width:210mm; height:297mm; position:relative; overflow:hidden; page-break-after:always; background:white; }
+.page:last-child { page-break-after:auto; }
+.header { background:#17324d; color:#fff; padding:14mm 15mm 10mm 15mm; }
+.name { font-size:26pt; font-weight:700; letter-spacing:.2px; margin:0; }
+.role { font-size:12pt; margin-top:2mm; color:#dbe7ef; font-weight:600; }
+.contact { font-size:8.5pt; margin-top:4mm; color:#edf4f8; }
+.content { padding:9mm 15mm 10mm 15mm; }
+.section { margin-bottom:5.2mm; }
+.section-title { font-size:10.5pt; text-transform:uppercase; letter-spacing:1.1px; color:#17324d; font-weight:700; border-bottom:1.4px solid #8fb7c9; padding-bottom:1.4mm; margin-bottom:3.2mm; }
+.summary { font-size:9.15pt; line-height:1.38; color:#334e5f; }
+.summary p { margin:0 0 2.1mm 0; }
+.expertise-grid { display:grid; grid-template-columns:1fr 1fr; gap:2.4mm 4mm; }
+.expertise { background:#f4f8fa; border-left:3px solid #5f9fb8; padding:2.2mm 2.6mm; min-height:17mm; }
+.expertise b { display:block; font-size:8.6pt; color:#17324d; margin-bottom:.8mm; }
+.expertise span { font-size:7.7pt; line-height:1.25; color:#405664; }
+.job { margin-bottom:4mm; }
+.job-head { display:flex; justify-content:space-between; align-items:baseline; gap:4mm; }
+.job-title { font-size:10pt; font-weight:700; color:#17324d; }
+.job-date { font-size:8.2pt; color:#60717c; white-space:nowrap; }
+.company { font-size:8.7pt; font-weight:600; color:#5f9fb8; margin-top:.5mm; }
+.job-intro { font-size:8.35pt; line-height:1.33; margin:1.7mm 0 1.6mm 0; color:#40515d; }
+ul { margin:1.1mm 0 0 4mm; padding-left:3.4mm; }
+li { font-size:8pt; line-height:1.28; margin:0 0 1.05mm 0; }
+.compact-job { margin-bottom:3mm; }
+.compact-job .job-title { font-size:9.1pt; }
+.compact-job .company { font-size:8.2pt; }
+.compact-job p { font-size:7.9pt; line-height:1.28; margin:1mm 0 0 0; }
+.skill-line { font-size:8.1pt; line-height:1.35; margin-bottom:1.5mm; }
+.skill-line b { color:#17324d; }
+.project { margin-bottom:2.2mm; font-size:7.9pt; line-height:1.3; }
+.project b { color:#17324d; }
+.education { font-size:8pt; line-height:1.3; margin-bottom:2.2mm; }
+.education b { color:#17324d; }
+.two-col { display:grid; grid-template-columns:1.1fr .9fr; gap:8mm; }
+.tagline { position:absolute; bottom:7mm; right:15mm; font-size:7pt; color:#8a99a5; }
+.small-note { font-size:7.5pt; color:#62717a; }
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="header">
+    <h1 class="name">Jordi Montornés Solé</h1>
+    <div class="role">Engineering Manager · Software Engineering</div>
+    <div class="contact">Barcelona, Spain &nbsp;·&nbsp; jordi.montornes@gmail.com &nbsp;·&nbsp; +34 626 360 276</div>
+  </div>
+  <div class="content">
+    <div class="section">
+      <div class="section-title">Professional Summary</div>
+      <div class="summary">
+        <p>Engineering Manager with 20+ years of software engineering experience, including almost 6 years leading teams in the Payments domain at Ocado Technology.</p>
+        <p>Experienced in building teams from scratch, leading cross-functional backend, web and mobile teams, shaping technical roadmaps, improving delivery predictability, and developing engineers through coaching and career progression.</p>
+        <p>Strong technical background across payments, backend and mobile engineering, with hands-on experience in payment orchestration, PSP integrations, wallets, alternative payment methods, 3DS flows and scalable payment platforms.</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Core Expertise</div>
+      <div class="expertise-grid">
+        <div class="expertise"><b>Engineering Leadership</b><span>Team building · People management · Coaching & mentoring · Career development · Performance management · Hiring · Cross-functional & distributed teams</span></div>
+        <div class="expertise"><b>Delivery & Ways of Working</b><span>Roadmap planning · Capacity planning · Monte Carlo forecasting · DORA metrics · Throughput · Lead time · Flow efficiency · Kanban · WIP management</span></div>
+        <div class="expertise"><b>Mobile</b><span>Android Development · Mobile Release Cycles  · Wallets · Multiplatform </span></div>
+        <div class="expertise"><b>Technical Leadership</b><span>Architecture · ADRs · RFCs · Technical feasibility · API & provider documentation · Backend & mobile systems</span></div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Professional Experience</div>
+      <div class="job">
+        <div class="job-head"><div class="job-title">Engineering Manager — Payments</div><div class="job-date">2020–2026</div></div>
+        <div class="company">Ocado Technology</div>
+        <div class="job-intro">Led engineering teams within Ocado Technology's Payments domain, working closely with Product Managers and engineering teams to evolve the payments platform across multiple international markets.</div>
+        <ul>
+          <li>Led a cross-functional team spanning backend, web, Android and iOS, responsible for Payment Methods and Wallets.</li>
+          <li>Previously built a backend team of 6–7 engineers from scratch, which became responsible for payment orchestration.</li>
+          <li>Led the delivery of 10+ Payment Service Provider integrations across multiple markets.</li>
+          <li>Worked with Product Managers to shape the roadmap, assess technical feasibility and define supported payment capabilities.</li>
+          <li>Contributed to decisions around direct PSP integrations versus orchestrators, provider versus internal wallets, and alternative payment methods.</li>
+          <li>Reviewed PSP documentation to understand payment flows, provider constraints and interactions between 3DS and authorisation.</li>
+          <li>Acted as a point of contact for teams needing guidance on payment capabilities and provider-specific behaviour.</li>
+          <li>Wrote ADRs and RFCs to support architectural decisions and make PSP integrations easier to scale.</li>
+          <li>Led a cross-location initiative to decouple payments from the order lifecycle, improving system boundaries and ownership.</li>
+          <li>Introduced Monte Carlo forecasting and used DORA and flow metrics to improve delivery predictability.</li>
+          <li>Introduced workflow changes and soft WIP limits to increase throughput and reduce lead times.</li>
+          <li>Supported engineers through career development and promotions, coached interns into full-time roles, and conducted 30+ interviews.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="tagline">Jordi Montornés Solé · CV</div>
+</div>
+
+<div class="page">
+  <div class="header" style="padding-top:9mm;padding-bottom:7mm;">
+    <h1 class="name" style="font-size:20pt;">Jordi Montornés Solé</h1>
+    <div class="role" style="font-size:10pt;">Engineering Manager · Payments · Software Engineering</div>
+  </div>
+  <div class="content" style="padding-top:7mm;">
+    <div class="section">
+      <div class="section-title">Earlier Experience</div>
+
+      <div class="compact-job">
+        <div class="job-head"><div class="job-title">Android Developer — Retailer App</div><div class="job-date">2016–2020</div></div>
+        <div class="company">Ocado Technology</div>
+        <p>Developed Ocado's Android retail application and white-label variants used by retailers across multiple markets, primarily using Java and Kotlin.</p>
+      </div>
+
+      <div class="compact-job">
+        <div class="job-head"><div class="job-title">Android Developer — Airline App</div><div class="job-date">2012–2016</div></div>
+        <div class="company">Vueling Airlines / Aktios</div>
+        <p>Developed the Vueling Android application from an early proof of concept into a mature production travel application.</p>
+      </div>
+
+      <div class="compact-job">
+        <div class="job-head"><div class="job-title">Backend & Web Developer</div><div class="job-date">2009–2012</div></div>
+        <div class="company">Vueling Airlines / Aktios</div>
+        <p>Worked on Vueling's webshop platform, including its migration from PHP to .NET, promotions engine and personalised homepage.</p>
+      </div>
+
+      <div class="compact-job">
+        <div class="job-head"><div class="job-title">Python Developer — Internal Tooling</div><div class="job-date">2006–2008</div></div>
+        <div class="company">HP / Capgemini</div>
+        <p>Developed internal build and engineering tooling using Python, Perl and TCL.</p>
+      </div>
+
+      <div class="compact-job">
+        <div class="job-head"><div class="job-title">COBOL Developer — Banking Software</div><div class="job-date">2004–2006</div></div>
+        <div class="company">ITC</div>
+        <p>Developed banking software related to investment products for Caixa Catalunya.</p>
+      </div>
+    </div>
+
+    <div class="two-col">
+      <div>
+        <div class="section">
+          <div class="section-title">Technical Skills</div>
+          <div class="skill-line"><b>Languages:</b> Kotlin · Java · Python ·  C · PHP </div>
+          <div class="skill-line"><b>Additional:</b> Go · Perl · COBOL</div>
+          <div class="skill-line"><b>Engineering:</b> Android · Backend development ·  REST APIs · CI/CD · Git · Jira · Software architecture · ADRs · RFCs</div>
+          <div class="skill-line"><b>Current hands-on:</b> Android · Python · Flask · C</div>
+        </div>
+
+        <div class="section">
+          <div class="section-title">Selected Side Projects</div>
+          <div class="project"><b>OfflineMoreOften.com — 2025</b><br>Backend development in Python/Flask for a four-person social platform project.</div>
+          <div class="project"><b>Alter Ego — 2024</b><br>Sega Master System game developed in C with Python tooling.</div>
+          <div class="project"><b>Robot Warehouse — 2021</b><br>Android/iOS game developed in Java/libGDX; built tooling and core entity logic.</div>
+          <div class="project"><b>Gotris — 2020</b><br>Sega Master System game developed in C with Python tooling.</div>
+        </div>
+      </div>
+
+      <div>
+        <div class="section">
+          <div class="section-title">Education</div>
+          <div class="education"><b>Computer Science Superior Degree</b><br>Universitat Politècnica de Catalunya, Barcelona<br><span class="small-note">2001–2004</span><br><i>Information Retrieval System with Relevance Feedback</i></div>
+          <div class="education"><b>Computer Science Technical Degree</b><br>Universitat de Lleida<br><span class="small-note">1997–2001</span><br><i>Video-Based Environment for Virtual Learning Corpus</i></div>
+        </div>
+
+        <div class="section">
+          <div class="section-title">Languages</div>
+          <div class="skill-line">Catalan — Native</div>
+          <div class="skill-line">Spanish — Native</div>
+          <div class="skill-line">English — Professional proficiency</div>
+          <div class="skill-line">Esperanto — Basic</div>
+        </div>
+
+        <div class="section">
+          <div class="section-title">Interests</div>
+          <div class="skill-line">Software development · Retro game development · Filmmaking</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="tagline">Jordi Montornés Solé · CV</div>
+</div>
+</body>
+</html>
